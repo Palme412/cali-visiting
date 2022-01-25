@@ -9,7 +9,7 @@ class Southern extends Component {
                     <div className="hero-body">
                         <div className="container">
                             <h1 className="title is-1 ">Los Angeles County</h1>
-                            <h2 className="subtitle">Los Angeles</h2>
+                            <h2 className="subtitle">Los Angeles <br /> Santa Monica</h2>
                         </div>
                     </div>
                 </section>
@@ -18,9 +18,9 @@ class Southern extends Component {
                         <div className="container">
                             <div className="columns">
                                 <div className="column is-6 is-offset-6">
-                                    <h1 className="title is-1 ">Los Angeles County</h1>
+                                    <h1 className="title is-1 ">San Bernardino County</h1>
                                     <hr className="content-divider" />
-                                    <h2 className="subtitle">Santa Monica</h2>
+                                    <h2 className="subtitle">Joshua Tree National Park</h2>
                                 </div>
                             </div>
                         </div>
@@ -31,7 +31,7 @@ class Southern extends Component {
                         <div className="container">
                             <div className="columns">
                                 <div className="column is-6">
-                                    <h1 className="title is-1 ">Sam Diego County</h1>
+                                    <h1 className="title is-1 ">San Diego County</h1>
                                     <hr className="content-divider" />
                                     <h2 className="subtitle">San Diego</h2>
                                 </div>

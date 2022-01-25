@@ -24,21 +24,21 @@ class Home extends Component {
                                             </a>
                                         </span>
                                         <span className="navbar-item">
-                                            <a className="button is-white is-outlined" href="#">
+                                            <a className="button is-white is-outlined" href="/central">
                                                 <span className="icon">
                                                 </span>
                                                 <span>Central</span>
                                             </a>
                                         </span>
                                         <span className="navbar-item">
-                                            <a className="button is-white is-outlined" href="#">
+                                            <a className="button is-white is-outlined" href="/northern">
                                                 <span className="icon">
                                                 </span>
                                                 <span>Northern</span>
                                             </a>
                                         </span>
                                         <span className="navbar-item">
-                                            <a className="button is-white is-outlined" href="https://github.com/BulmaTemplates/bulma-templates/blob/master/templates/landing.html">
+                                            <a className="button is-white is-outlined" href="/southern">
                                                 <span className="icon">
                                                 </span>
                                                 <span>Southern</span>

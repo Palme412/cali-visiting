@@ -20,7 +20,7 @@ class Central extends Component {
                                 <div className="column is-6 is-offset-6">
                                     <h1 className="title is-1 ">Monterey County</h1>
                                     <hr className="content-divider" />
-                                    <h2 className="subtitle">Big Sur</h2>
+                                    <h2 className="subtitle">Big Sur <br /> Montery Bay</h2>
                                 </div>
                             </div>
                         </div>
@@ -31,9 +31,9 @@ class Central extends Component {
                         <div className="container">
                             <div className="columns">
                                 <div className="column is-6">
-                                    <h1 className="title is-1 ">Monterey County</h1>
+                                    <h1 className="title is-1 ">Santa Barbara County</h1>
                                     <hr className="content-divider" />
-                                    <h2 className="subtitle">Monterey Bay</h2>
+                                    <h2 className="subtitle">Santa Barbara</h2>
                                 </div>
                             </div>
                         </div>
