@@ -45,8 +45,8 @@
     height: 5px;
   }
   
-  #parallax-1 {
-    background: url(https://source.unsplash.com/featured/?nature);
+  #parallax-4 {
+    background: url('../../public/images/yosemite.jpeg');
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -54,12 +54,12 @@
     border-top: 10px solid coral;
   }
   
-  #parallax-1 hr {
+  #parallax-4 hr {
     background: coral;
   }
   
-  #parallax-2 {
-    background: url(https://source.unsplash.com/featured/?computers);
+  #parallax-5 {
+    background: url('../../public/images/tahoe.jpeg');
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -67,12 +67,12 @@
     border-top: 10px solid yellow;
   }
   
-  #parallax-2 hr {
+  #parallax-5 hr {
     background: yellow;
   }
   
-  #parallax-3 {
-    background: url(https://source.unsplash.com/featured/?city);
+  #parallax-6 {
+    background: url('../../public/images/SantaCruz.jpeg');
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -80,7 +80,19 @@
     border-top: 10px solid hotpink;
   }
   
-  #parallax-3 hr {
+  #parallax-6 hr {
+    background: hotpink;
+  }
+  #parallax-7 {
+    background: url('../../public/images/sanfran.jpeg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-top: 10px solid hotpink;
+  }
+  
+  #parallax-7 hr {
     background: hotpink;
   }
   
