@@ -6,14 +6,70 @@ class Central extends Component {
         return (
             <div>
                 <section className="hero is-medium">
-                    <div className="hero-body">
+                    <div className="hero-head">
+                        <nav className="navbar">
+                            <div className="container">
+                                <div className="navbar-brand">
+                                    <span className="navbar-burger burger" data-target="navbarMenu">
+                                    </span>
+                                </div>
+                                <div id="navbarMenu" className="navbar-menu">
+                                    <div className="navbar-end">
+                                        <span className="navbar-item">
+                                            <a className="button is-ghost is-outlined" href="#">
+                                                <span className="icon">
+                                                    <i className="fa fa-home"></i>
+                                                </span>
+                                                <span>Home</span>
+                                            </a>
+                                        </span>
+                                        <span className="navbar-item">
+                                            <a className="button is-white is-outlined" href="/central">
+                                                <span className="icon">
+                                                </span>
+                                                <span>Central</span>
+                                            </a>
+                                        </span>
+                                        <span className="navbar-item">
+                                            <a className="button is-white is-outlined" href="/northern">
+                                                <span className="icon">
+                                                </span>
+                                                <span>Northern</span>
+                                            </a>
+                                        </span>
+                                        <span className="navbar-item">
+                                            <a className="button is-white is-outlined" href="/southern">
+                                                <span className="icon">
+                                                </span>
+                                                <span>Southern</span>
+                                            </a>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <section id="parallax-4" className="hero is-large ">
+                        <div className="hero-body">
+                            <div className="container">
+                                <div className="columns">
+                                    <div className="column is-6 is-offset-6">
+                                        <h1 className="title is-1 ">Tulare County</h1>
+                                        <hr className="content-divider" />
+                                        <h2 className="subtitle">Sequoia National Park</h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    {/* <div className="hero-body">
                         <div className="container">
                             <h1 className="title is-1 ">Tulare County</h1>
                             <h2 className="subtitle">Sequoia National Park</h2>
                         </div>
-                    </div>
+                    </div> */}
                 </section>
-                <section id="parallax-1" className="hero is-large ">
+                <section id="parallax-5" className="hero is-large ">
                     <div className="hero-body">
                         <div className="container">
                             <div className="columns">
@@ -26,7 +82,7 @@ class Central extends Component {
                         </div>
                     </div>
                 </section>
-                <section id="parallax-2" className="hero is-large ">
+                <section id="parallax-6" className="hero is-large ">
                     <div className="hero-body">
                         <div className="container">
                             <div className="columns">
@@ -39,7 +95,7 @@ class Central extends Component {
                         </div>
                     </div>
                 </section>
-                <section id="parallax-3" className="hero is-large ">
+                <section id="parallax-7" className="hero is-large ">
                     <div className="hero-body">
                         <div className="container">
                             <div className="columns">
