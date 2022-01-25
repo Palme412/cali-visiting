@@ -10,6 +10,9 @@ import {
 
 // Components ====== //
 import Home from "./components/Home";
+import Central from "./components/Central";
+import Northern from "./components/Northern";
+import Southern from "./components/Southern";
 
 class App extends Component {
   render() {
@@ -18,6 +21,9 @@ class App extends Component {
         <div>
           <Routes>
             <Route exact path='/' element={<Home />} />
+            <Route path='/central' element={<Central />} />
+            <Route path='/northern' element={<Northern />} />
+            <Route path='/southern' element={<Southern />} />
           </Routes>
         </div>
       </Router>
