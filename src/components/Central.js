@@ -16,7 +16,7 @@ class Central extends Component {
                                 <div id="navbarMenu" className="navbar-menu">
                                     <div className="navbar-end">
                                         <span className="navbar-item">
-                                            <a className="button is-ghost is-outlined" href="#">
+                                            <a className="button is-ghost is-outlined" href="/home">
                                                 <span className="icon">
                                                     <i className="fa fa-home"></i>
                                                 </span>
@@ -49,14 +49,14 @@ class Central extends Component {
                             </div>
                         </nav>
                     </div>
-                    <section id="parallax-4" className="hero is-large ">
+                    <section id="sequoia" className="hero is-large ">
                         <div className="hero-body">
                             <div className="container">
                                 <div className="columns">
                                     <div className="column is-6 is-offset-6">
-                                        <h1 className="title is-1 ">Tulare County</h1>
+                                        <h1 className="title is-1">Tulare County</h1>
                                         <hr className="content-divider" />
-                                        <h2 className="subtitle">Sequoia National Park</h2>
+                                        <h2 className="title is-4">Sequoia National Park</h2>
                                     </div>
                                 </div>
                             </div>
@@ -69,40 +69,40 @@ class Central extends Component {
                         </div>
                     </div> */}
                 </section>
-                <section id="parallax-5" className="hero is-large ">
+                <section id="bigsur" className="hero is-large">
                     <div className="hero-body">
                         <div className="container">
                             <div className="columns">
                                 <div className="column is-6 is-offset-6">
                                     <h1 className="title is-1 ">Monterey County</h1>
                                     <hr className="content-divider" />
-                                    <h2 className="subtitle">Big Sur <br /> Montery Bay</h2>
+                                    <h2 className="title is-4">Big Sur <br /> Montery Bay</h2>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </section>
-                <section id="parallax-6" className="hero is-large ">
+                <section id="santa" className="hero is-large">
                     <div className="hero-body">
                         <div className="container">
                             <div className="columns">
                                 <div className="column is-6">
                                     <h1 className="title is-1 ">Santa Barbara County</h1>
                                     <hr className="content-divider" />
-                                    <h2 className="subtitle">Santa Barbara</h2>
+                                    <h2 className="title is-4">Santa Barbara</h2>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </section>
-                <section id="parallax-7" className="hero is-large ">
+                <section id="slo" className="hero is-large">
                     <div className="hero-body">
                         <div className="container">
                             <div className="columns">
-                                <div className="column is-6 is-offset-6">
+                                <div className="column is-6">
                                     <h1 className="title is-1 ">San Luis Obispo County</h1>
                                     <hr className="content-divider" />
-                                    <h2 className="subtitle">San Luis Obispo</h2>
+                                    <h2 className="title is-4">San Luis Obispo</h2>
                                 </div>
                             </div>
                         </div>

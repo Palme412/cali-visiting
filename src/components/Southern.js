@@ -6,53 +6,110 @@ class Southern extends Component {
         return (
             <div>
                 <section className="hero is-medium">
-                    <div className="hero-body">
-                        <div className="container">
-                            <h1 className="title is-1 ">Los Angeles County</h1>
-                            <h2 className="subtitle">Los Angeles <br /> Santa Monica</h2>
-                        </div>
+                    <div className="hero-head">
+                        <nav className="navbar">
+                            <div className="container">
+                                <div className="navbar-brand">
+                                    <span className="navbar-burger burger" data-target="navbarMenu">
+                                    </span>
+                                </div>
+                                <div id="navbarMenu" className="navbar-menu">
+                                    <div className="navbar-end">
+                                        <span className="navbar-item">
+                                            <a className="button is-ghost is-outlined" href="/home">
+                                                <span className="icon">
+                                                    <i className="fa fa-home"></i>
+                                                </span>
+                                                <span>Home</span>
+                                            </a>
+                                        </span>
+                                        <span className="navbar-item">
+                                            <a className="button is-white is-outlined" href="/central">
+                                                <span className="icon">
+                                                </span>
+                                                <span>Central</span>
+                                            </a>
+                                        </span>
+                                        <span className="navbar-item">
+                                            <a className="button is-white is-outlined" href="/northern">
+                                                <span className="icon">
+                                                </span>
+                                                <span>Northern</span>
+                                            </a>
+                                        </span>
+                                        <span className="navbar-item">
+                                            <a className="button is-white is-outlined" href="/southern">
+                                                <span className="icon">
+                                                </span>
+                                                <span>Southern</span>
+                                            </a>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
                     </div>
-                </section>
-                <section id="parallax-1" className="hero is-large ">
-                    <div className="hero-body">
-                        <div className="container">
-                            <div className="columns">
-                                <div className="column is-6 is-offset-6">
-                                    <h1 className="title is-1 ">San Bernardino County</h1>
-                                    <hr className="content-divider" />
-                                    <h2 className="subtitle">Joshua Tree National Park</h2>
+                    <section id="la" className="hero is-large ">
+                        <div className="hero-body">
+                            <div className="container">
+                                <div className="columns">
+                                    <div className="column is-6 is-offset-6">
+                                        <h1 className="title is-1 ">Los Angeles County</h1>
+                                        <hr className="content-divider" />
+                                        <h2 className="title is-4">Los Angeles</h2>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </section>
-                <section id="parallax-2" className="hero is-large ">
-                    <div className="hero-body">
-                        <div className="container">
-                            <div className="columns">
-                                <div className="column is-6">
-                                    <h1 className="title is-1 ">San Diego County</h1>
-                                    <hr className="content-divider" />
-                                    <h2 className="subtitle">San Diego</h2>
+                    </section>
+                    {/* <section className="hero is-medium">
+                        <div className="hero-body">
+                            <div className="container">
+                                <h1 className="title is-1 ">Los Angeles County</h1>
+                                <h2 className="subtitle">Los Angeles <br /> Santa Monica</h2>
+                            </div>
+                        </div>
+                    </section> */}
+                    <section id="sanbern" className="hero is-large ">
+                        <div className="hero-body">
+                            <div className="container">
+                                <div className="columns">
+                                    <div className="column is-6 is-offset-6">
+                                        <h1 className="title is-1 ">San Bernardino County</h1>
+                                        <hr className="content-divider" />
+                                        <h2 className="title is-4">Joshua Tree National Park</h2>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </section>
-                <section id="parallax-3" className="hero is-large ">
-                    <div className="hero-body">
-                        <div className="container">
-                            <div className="columns">
-                                <div className="column is-6 is-offset-6">
-                                    <h1 className="title is-1 ">Orange County</h1>
-                                    <hr className="content-divider" />
-                                    <h2 className="subtitle">Laguna Beach</h2>
+                    </section>
+                    <section id="sandiego" className="hero is-large ">
+                        <div className="hero-body">
+                            <div className="container">
+                                <div className="columns">
+                                    <div className="column is-6">
+                                        <h1 className="title is-1 ">San Diego County</h1>
+                                        <hr className="content-divider" />
+                                        <h2 className="title is-4">San Diego</h2>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </section>
-                {/* <section className="cta va">
+                    </section>
+                    <section id="laguna" className="hero is-large ">
+                        <div className="hero-body">
+                            <div className="container">
+                                <div className="columns">
+                                    <div className="column is-6">
+                                        <h1 className="title is-1 ">Orange County</h1>
+                                        <hr className="content-divider" />
+                                        <h2 className="title is-4">Laguna Beach</h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    {/* <section className="cta va">
                     <div className="container">
                         <div className="columns">
                             <div className="column is-6">
@@ -84,8 +141,9 @@ class Southern extends Component {
                             </div>
                         </div>
                     </div>
+                    */}
 
-                </section> */}
+                </section>
                 <footer className="footer">
                     <div className="content has-text-centered">
                         <p>

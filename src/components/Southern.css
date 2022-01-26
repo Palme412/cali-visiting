@@ -45,43 +45,55 @@
     height: 5px;
   }
   
-  #parallax-1 {
-    background: url(https://source.unsplash.com/featured/?nature);
+  #la{
+    background: url("../../public/images/losangeles.jpeg");
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    border-top: 10px solid coral;
+    border-top: 5px solid black;
   }
   
-  #parallax-1 hr {
-    background: coral;
+  #la hr {
+    background: black;
   }
   
-  #parallax-2 {
-    background: url(https://source.unsplash.com/featured/?computers);
+  #sanbern {
+    background: url("../../public/images/joshtree.jpeg");
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    border-top: 10px solid yellow;
+    border-top: 5px solid black;
   }
   
-  #parallax-2 hr {
-    background: yellow;
+  #sanbern hr {
+    background: black;
   }
   
-  #parallax-3 {
-    background: url(https://source.unsplash.com/featured/?city);
+  #sandiego {
+    background: url("../../public/images/sandiego.jpeg");
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    border-top: 10px solid hotpink;
+    border-top: 5px solid black;
   }
   
-  #parallax-3 hr {
-    background: hotpink;
+  #sandiego hr {
+    background: black;
+  }
+  #laguna {
+    background: url("../../public/images/laguna.jpeg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-top: 5px solid black;
+  }
+  
+  #laguna hr {
+    background: black;
   }
   
   .label {

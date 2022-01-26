@@ -45,55 +45,55 @@
     height: 5px;
   }
   
-  #parallax-4 {
+  #sequoia {
     background: url('../../public/images/sequoia.jpeg');
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    border-top: 10px solid coral;
+    border-top: 5px solid black;
   }
   
-  #parallax-4 hr {
-    background: coral;
+  #sequoia hr {
+    background: black;
   }
   
-  #parallax-5 {
+  #bigsur {
     background: url('../../public/images/bigsur.jpeg');
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    border-top: 10px solid yellow;
+    border-top: 5px solid black;
   }
   
-  #parallax-5 hr {
-    background: yellow;
+  #bigsur hr {
+    background: black;
   }
   
-  #parallax-6 {
+  #santa {
     background: url('../../public/images/santa_barbara.jpeg');
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    border-top: 10px solid hotpink;
+    border-top: 5px solid black;
   }
   
-  #parallax-6 hr {
-    background: hotpink;
+  #santa hr {
+    background: black;
   }
-  #parallax-7 {
+  #slo {
     background: url('../../public/images/slo.jpeg');
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    border-top: 10px solid hotpink;
+    border-top: 5px solid black;
   }
   
-  #parallax-7 hr {
-    background: hotpink;
+  #slo hr {
+    background: black;
   }
   
   .label {

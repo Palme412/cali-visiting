@@ -5,7 +5,7 @@ class Northern extends Component {
     render() {
         return (
             <div>
-                <section id="parallax-4" className="hero is-large ">
+                <section className="hero is-medium">
                     <div className="hero-head">
                         <nav className="navbar">
                             <div className="container">
@@ -16,7 +16,7 @@ class Northern extends Component {
                                 <div id="navbarMenu" className="navbar-menu">
                                     <div className="navbar-end">
                                         <span className="navbar-item">
-                                            <a className="button is-ghost is-outlined" href="#">
+                                            <a className="button is-ghost is-outlined" href="/home">
                                                 <span className="icon">
                                                     <i className="fa fa-home"></i>
                                                 </span>
@@ -49,60 +49,61 @@ class Northern extends Component {
                             </div>
                         </nav>
                     </div>
-                    <div className="hero-body">
-                        <div className="container">
-                            <div className="columns">
-                                <div className="column is-6 is-offset-6">
-                                    <h1 className="title is-1 ">Mariposa County</h1>
-                                    <hr className="content-divider" />
-                                    <h2 className="subtitle">Yosemite National Park</h2>
+                    <section id="yosemite" className="hero is-large ">
+                        <div className="hero-body">
+                            <div className="container">
+                                <div className="columns">
+                                    <div className="column is-6 is-offset-6">
+                                        <h1 className="title is-1 ">Mariposa County</h1>
+                                        <hr className="content-divider" />
+                                        <h2 className="title is-4">Yosemite National Park</h2>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </section>
-                {/* <section className="hero is-medium">
+                    </section>
+                    {/* <section className="hero is-medium">
                     <div className="hero-body">
                         <div className="container">
                             <h1 className="title is-1 ">Mariposa County</h1>
                             <h2 className="subtitle">Yosemite National Park</h2>
                         </div>
-                    </div>
-                </section> */}
-                <section id="parallax-5" className="hero is-large ">
+                    </div> */}
+                </section>
+                <section id="tahoe" className="hero is-large">
                     <div className="hero-body">
                         <div className="container">
                             <div className="columns">
                                 <div className="column is-6 is-offset-6">
                                     <h1 className="title is-1 ">El Dorado County</h1>
                                     <hr className="content-divider" />
-                                    <h2 className="subtitle">Lake Tahoe</h2>
+                                    <h2 className="title is-4">Lake Tahoe</h2>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </section>
-                <section id="parallax-6" className="hero is-large ">
+                <section id="santacruz" className="hero is-large">
                     <div className="hero-body">
                         <div className="container">
                             <div className="columns">
                                 <div className="column is-6">
                                     <h1 className="title is-1 ">Santa Cruz County</h1>
                                     <hr className="content-divider" />
-                                    <h2 className="subtitle">Santa Cruz</h2>
+                                    <h2 className="title is-4">Santa Cruz</h2>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </section>
-                <section id="parallax-7" className="hero is-large ">
+                <section id="sanfran" className="hero is-large">
                     <div className="hero-body">
                         <div className="container">
                             <div className="columns">
-                                <div className="column is-6 is-offset-6">
+                                <div className="column is-6">
                                     <h1 className="title is-1 ">San Francisco</h1>
                                     <hr className="content-divider" />
-                                    <h2 className="subtitle">San Francisco County</h2>
+                                    <h2 className="title is-4">San Francisco County</h2>
                                 </div>
                             </div>
                         </div>
