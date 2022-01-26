@@ -1,36 +1,102 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import { render } from '@testing-library/react';
+import React, { useEffect, useState, Component } from 'react';
 import {
-  BrowserRouter as Router,
   Route,
-  Routes,
-  Link
+  Switch,
+  Redirect
 } from 'react-router-dom';
+import jwt_decode from 'jwt-decode';
+import setAuthToken from './utils/setAuthToken';
 
 // Components ====== //
 import Home from "./components/Home";
 import Central from "./components/Central";
 import Northern from "./components/Northern";
 import Southern from "./components/Southern";
-import Signup from "./components/Signup"
+import Signup from "./components/Signup";
+import Login from "./components/Login";
+import Profile from "./components/Profile";
 
-class App extends Component {
-  render() {
-    return (
-      <Router>
-        <div>
-          <Routes>
-            <Route exact path='/' element={<Home />} />
-            <Route path='/central' element={<Central />} />
-            <Route path='/northern' element={<Northern />} />
-            <Route path='/southern' element={<Southern />} />
-            <Route path='/users/signup' element={<Signup />} />
-          </Routes>
-        </div>
-      </Router>
-    );
-  }
+const PrivateRoute = ({ component: Component, ...rest }) => {
+  let token = localStorage.getItem('jwtToken');
+  // console.log('===> Hitting a Private Route');
+  return <Route {...rest} render={(props) => {
+    return token ? <Component {...rest} {...props} /> : <Redirect to="/login" />
+  }} />
 }
+
+function App() {
+  // Set state values
+  const [currentUser, setCurrentUser] = useState('');
+  const [isAuthenticated, setIsAuthenticated] = useState(true);
+
+  useEffect(() => {
+    let token;
+
+    if (!localStorage.getItem('jwtToken')) {
+      setIsAuthenticated(false);
+      // console.log('====> Authenticated is now FALSE');
+    } else {
+      token = jwt_decode(localStorage.getItem('jwtToken'));
+      setAuthToken(localStorage.getItem('jwtToken'));
+      setCurrentUser(token);
+    }
+  }, []);
+
+  const nowCurrentUser = (userData) => {
+    // console.log('===> nowCurrentUser is here.');
+    setCurrentUser(userData);
+    setIsAuthenticated(true);
+  }
+
+  const handleLogout = () => {
+    if (localStorage.getItem('jwtToken')) {
+      // remove token for localStorage
+      localStorage.removeItem('jwtToken');
+      setCurrentUser(null);
+      setIsAuthenticated(false);
+    }
+  }
+
+  return (
+    <div className="App">
+      <Navbar handleLogout={handleLogout} isAuth={isAuthenticated} />
+      <div className="container mt-5">
+        <Switch>
+          <Route path='/signup' element={<Signup />} />
+          <Route
+            path="/login"
+            render={(props) => <Login {...props} nowCurrentUser={nowCurrentUser} setIsAuthenticated={setIsAuthenticated} user={currentUser} />}
+          />
+          <PrivateRoute path="/profile" component={Profile} user={currentUser} handleLogout={handleLogout} />
+          <Route exact path='/' element={<Home />} />
+          <Route path='/central' element={<Central />} />
+          <Route path='/northern' element={<Northern />} />
+          <Route path='/southern' element={<Southern />} />
+        </Switch>
+      </div>
+      <Footer />
+    </div>
+  );
+}
+
+// ROUTES HERE //
+// class App extends Component {
+//   render() {
+//     return (
+//       <Router>
+//         <div>
+//           <Routes>
+//             {/* <Route exact path='/' element={<Home />} /> */}
+//             <Route path='/central' element={<Central />} />
+//             <Route path='/northern' element={<Northern />} />
+//             <Route path='/southern' element={<Southern />} />
+//             <Route path='/users/signup' element={<Signup />} />
+//             <Route path='/users/login' element={<Login />} />
+//           </Routes>
+//         </div>
+//       </Router>
+//     );
+//   }
+// }
 
 export default App;
