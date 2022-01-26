@@ -10,16 +10,13 @@ class Home extends Component {
                         <nav className="navbar">
                             <div className="container">
                                 <div className="navbar-brand">
-                                    <a className="navbar-item" href="../">
-                                        <img src="http://bulma.io/images/bulma-type-white.png" alt="Logo" />
-                                    </a>
                                     <span className="navbar-burger burger" data-target="navbarMenu">
                                     </span>
                                 </div>
                                 <div id="navbarMenu" className="navbar-menu">
                                     <div className="navbar-end">
                                         <span className="navbar-item">
-                                            <a className="button is-white is-outlined" href="#">
+                                            <a className="button is-white is-outlined" href="/">
                                                 <span className="icon">
                                                     <i className="fa fa-home"></i>
                                                 </span>
@@ -27,27 +24,24 @@ class Home extends Component {
                                             </a>
                                         </span>
                                         <span className="navbar-item">
-                                            <a className="button is-white is-outlined" href="#">
+                                            <a className="button is-white is-outlined" href="/central">
                                                 <span className="icon">
-                                                    <i className="fa fa-superpowers"></i>
                                                 </span>
-                                                <span>Examples</span>
+                                                <span>Central</span>
                                             </a>
                                         </span>
                                         <span className="navbar-item">
-                                            <a className="button is-white is-outlined" href="#">
+                                            <a className="button is-white is-outlined" href="/northern">
                                                 <span className="icon">
-                                                    <i className="fa fa-book"></i>
                                                 </span>
-                                                <span>Documentation</span>
+                                                <span>Northern</span>
                                             </a>
                                         </span>
                                         <span className="navbar-item">
-                                            <a className="button is-white is-outlined" href="https://github.com/BulmaTemplates/bulma-templates/blob/master/templates/landing.html">
+                                            <a className="button is-white is-outlined" href="/southern">
                                                 <span className="icon">
-                                                    <i className="fa fa-github"></i>
                                                 </span>
-                                                <span>View Source</span>
+                                                <span>Southern</span>
                                             </a>
                                         </span>
                                     </div>
@@ -60,23 +54,13 @@ class Home extends Component {
                         <div className="container has-text-centered">
                             <div className="column is-6 is-offset-3">
                                 <h1 className="title">
-                                    Coming Soon
+                                    Visiting California?
                                 </h1>
                                 <h2 className="subtitle">
-                                    $this is the best software platform for running an internet business. We handle billions of dollars every year for forward-thinking businesses around the world.
+                                    California is a huge state, if you're going to be in north, central, or southern California, this guide will help
+                                    with visiting by providing you a list of things you can do in each region, more specifically
+                                    by counties in each region.
                                 </h2>
-                                <div className="box">
-                                    <div className="field is-grouped">
-                                        <p className="control is-expanded">
-                                            <input className="input" type="text" placeholder="Enter your email" />
-                                        </p>
-                                        <p className="control">
-                                            <a className="button is-info">
-                                                Notify Me
-                                            </a>
-                                        </p>
-                                    </div>
-                                </div>
                             </div>
                         </div>
                     </div>
