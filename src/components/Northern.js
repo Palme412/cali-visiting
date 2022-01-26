@@ -74,7 +74,7 @@ class Northern extends Component {
                     <div className="hero-body">
                         <div className="container">
                             <div className="columns">
-                                <div className="column is-6 is-offset-6">
+                                <div className="column is-6 ">
                                     <h1 className="title is-1 ">El Dorado County</h1>
                                     <hr className="content-divider" />
                                     <h2 className="title is-4">Lake Tahoe</h2>
@@ -87,7 +87,7 @@ class Northern extends Component {
                     <div className="hero-body">
                         <div className="container">
                             <div className="columns">
-                                <div className="column is-6">
+                                <div className="column is-6 is-offset-6">
                                     <h1 className="title is-1 ">Santa Cruz County</h1>
                                     <hr className="content-divider" />
                                     <h2 className="title is-4">Santa Cruz</h2>
