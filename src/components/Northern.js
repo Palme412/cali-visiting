@@ -16,7 +16,7 @@ class Northern extends Component {
                                 <div id="navbarMenu" className="navbar-menu">
                                     <div className="navbar-end">
                                         <span className="navbar-item">
-                                            <a className="button is-ghost is-outlined" href="/home">
+                                            <a className="button is-white is-outlined" href="/">
                                                 <span className="icon">
                                                     <i className="fa fa-home"></i>
                                                 </span>
@@ -56,7 +56,8 @@ class Northern extends Component {
                                     <div className="column is-6 is-offset-6">
                                         <h1 className="title is-1 ">Mariposa County</h1>
                                         <hr className="content-divider" />
-                                        <h2 className="title is-4">Yosemite National Park</h2>
+                                        <h2 className="title is-4">Yosemite National Park <br /> Sierra National Forest
+                                            <br /> Vernal Falls</h2>
                                     </div>
                                 </div>
                             </div>
@@ -77,7 +78,8 @@ class Northern extends Component {
                                 <div className="column is-6 ">
                                     <h1 className="title is-1 ">El Dorado County</h1>
                                     <hr className="content-divider" />
-                                    <h2 className="title is-4">Lake Tahoe</h2>
+                                    <h2 className="title is-4">Lake Tahoe <br /> Emerald Bay State Park
+                                        <br /> Mount Tallac</h2>
                                 </div>
                             </div>
                         </div>
@@ -90,7 +92,8 @@ class Northern extends Component {
                                 <div className="column is-6 is-offset-6">
                                     <h1 className="title is-1 ">Santa Cruz County</h1>
                                     <hr className="content-divider" />
-                                    <h2 className="title is-4">Santa Cruz</h2>
+                                    <h2 className="title is-4">Santa Cruz <br /> Santa Cruz Beach Boardwalk
+                                        <br /> Natural Bridges State Beach</h2>
                                 </div>
                             </div>
                         </div>
@@ -101,9 +104,10 @@ class Northern extends Component {
                         <div className="container">
                             <div className="columns">
                                 <div className="column is-6">
-                                    <h1 className="title is-1 ">San Francisco</h1>
+                                    <h1 className="title is-1 ">San Francisco County</h1>
                                     <hr className="content-divider" />
-                                    <h2 className="title is-4">San Francisco County</h2>
+                                    <h2 className="title is-4">San Francisco <br /> Golden Gate Bridge
+                                        <br /> Alcatraz Island</h2>
                                 </div>
                             </div>
                         </div>
@@ -143,7 +147,7 @@ class Northern extends Component {
                     </div>
 
                 </section> */}
-                <footer className="footer">
+                {/* <footer className="footer">
                     <div className="content has-text-centered">
                         <p>
                             <strong>Bulma</strong> by <a href="https://jgthms.com">Jeremy Thomas</a>. The source code is licensed
@@ -151,7 +155,7 @@ class Northern extends Component {
                             is licensed <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY NC SA 4.0</a>.
                         </p>
                     </div>
-                </footer>
+                </footer> */}
             </div>
         );
     }

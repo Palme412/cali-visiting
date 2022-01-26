@@ -16,7 +16,7 @@ class Central extends Component {
                                 <div id="navbarMenu" className="navbar-menu">
                                     <div className="navbar-end">
                                         <span className="navbar-item">
-                                            <a className="button is-ghost is-outlined" href="/home">
+                                            <a className="button is-white is-outlined" href="/">
                                                 <span className="icon">
                                                     <i className="fa fa-home"></i>
                                                 </span>
@@ -56,7 +56,8 @@ class Central extends Component {
                                     <div className="column is-6 is-offset-6">
                                         <h1 className="title is-1">Tulare County</h1>
                                         <hr className="content-divider" />
-                                        <h2 className="title is-4">Sequoia National Park</h2>
+                                        <h2 className="title is-4">Sequoia National Park <br /> Pear Lake
+                                            <br />Moro Rock Trail </h2>
                                     </div>
                                 </div>
                             </div>
@@ -76,7 +77,8 @@ class Central extends Component {
                                 <div className="column is-6 ">
                                     <h1 className="title is-1 ">Monterey County</h1>
                                     <hr className="content-divider" />
-                                    <h2 className="title is-4">Big Sur <br /> Montery Bay</h2>
+                                    <h2 className="title is-4">Big Sur <br /> Montery Bay
+                                        <br /> Monterey Bay Aquarium</h2>
                                 </div>
                             </div>
                         </div>
@@ -89,7 +91,8 @@ class Central extends Component {
                                 <div className="column is-6 is-offset-6">
                                     <h1 className="title is-1 ">Santa Barbara County</h1>
                                     <hr className="content-divider" />
-                                    <h2 className="title is-4">Santa Barbara</h2>
+                                    <h2 className="title is-4">Santa Barbara <br /> Stearns Wharf
+                                        <br />Lotusland </h2>
                                 </div>
                             </div>
                         </div>
@@ -102,7 +105,8 @@ class Central extends Component {
                                 <div className="column is-6">
                                     <h1 className="title is-1 ">San Luis Obispo County</h1>
                                     <hr className="content-divider" />
-                                    <h2 className="title is-4">San Luis Obispo</h2>
+                                    <h2 className="title is-4">San Luis Obispo <br /> Morro Rock
+                                        <br />Madonna Inn </h2>
                                 </div>
                             </div>
                         </div>
@@ -142,7 +146,7 @@ class Central extends Component {
                     </div>
 
                 </section> */}
-                <footer className="footer">
+                {/* <footer className="footer">
                     <div className="content has-text-centered">
                         <p>
                             <strong>Bulma</strong> by <a href="https://jgthms.com">Jeremy Thomas</a>. The source code is licensed
@@ -150,7 +154,7 @@ class Central extends Component {
                             is licensed <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY NC SA 4.0</a>.
                         </p>
                     </div>
-                </footer>
+                </footer> */}
             </div>
         );
     }

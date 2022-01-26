@@ -16,7 +16,7 @@ class Home extends Component {
                                 <div id="navbarMenu" className="navbar-menu">
                                     <div className="navbar-end">
                                         <span className="navbar-item">
-                                            <a className="button is-white is-outlined" href="#">
+                                            <a className="button is-white is-outlined" href="/">
                                                 <span className="icon">
                                                     <i className="fa fa-home"></i>
                                                 </span>
