@@ -1,8 +1,8 @@
-// import "./Signup.css";
+import "./Signup.css";
 
 import React, { Component } from "react";
 import axios from "axios";
-import { Redirect } from "react-router-dom";
+import { Navigate } from "react-router-dom";
 const { REACT_APP_SERVER_URL } = process.env;
 
 class Signup extends Component {
@@ -67,7 +67,7 @@ class Signup extends Component {
     };
 
     render() {
-        if (this.state.redirect) return <Redirect to="/login" />; // You can have them redirected to profile (your choice)
+        if (this.state.redirect) return <Navigate to="/login" />; // You can have them redirected to profile (your choice)
 
         return (
             <>

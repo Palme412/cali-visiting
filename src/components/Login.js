@@ -1,6 +1,6 @@
 import "./Login.css";
 import React, { Component } from "react";
-import { Redirect } from "react-router-dom";
+import { Navigate } from "react-router-dom";
 import axios from "axios";
 import jwt_decode from 'jwt-decode';
 import setAuthToken from '../utils/setAuthToken';
@@ -52,7 +52,7 @@ class Login extends Component {
     };
 
     render() {
-        if (this.props.user) return <Redirect to="/profile" />; // You can have them redirected to profile (your choice)
+        if (this.props.user) return <Navigate to="/profile" />; // You can have them redirected to profile (your choice)
 
         return (
             <>
@@ -98,9 +98,6 @@ class Login extends Component {
                             <br />
                             <nav className="level">
                                 <div className="level-item has-text-centered">
-                                    <div>
-                                        <a href="#">Forgot Password?</a>
-                                    </div>
                                 </div>
                                 <div className="level-item has-text-centered">
                                     <div>

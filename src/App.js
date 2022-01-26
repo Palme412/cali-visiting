@@ -1,28 +1,33 @@
+// Imports
 import React, { useEffect, useState, Component } from 'react';
-import {
-  Route,
-  Switch,
-  Redirect
-} from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
 import jwt_decode from 'jwt-decode';
 import setAuthToken from './utils/setAuthToken';
 
-// Components ====== //
-import Home from "./components/Home";
-import Central from "./components/Central";
-import Northern from "./components/Northern";
-import Southern from "./components/Southern";
-import Signup from "./components/Signup";
-import Login from "./components/Login";
-import Profile from "./components/Profile";
+// CSS
+import './App.css';
+
+// Components
+import Signup from './components/Signup';
+// import About from './components/About';
+// import Footer from './components/Footer';
+import Login from './components/Login';
+import Navbar from './components/Navbar';
+import Profile from './components/Profile';
+// import Welcome from './components/Welcome';
+import Central from './components/Central';
+import Northern from './components/Northern';
+import Southern from './components/Southern';
+import Home from './components/Home';
 
 const PrivateRoute = ({ component: Component, ...rest }) => {
   let token = localStorage.getItem('jwtToken');
   // console.log('===> Hitting a Private Route');
   return <Route {...rest} render={(props) => {
-    return token ? <Component {...rest} {...props} /> : <Redirect to="/login" />
+    return token ? <Component {...rest} {...props} /> : <Navigate to="/login" />
   }} />
 }
+
 
 function App() {
   // Set state values
@@ -59,44 +64,25 @@ function App() {
 
   return (
     <div className="App">
-      <Navbar handleLogout={handleLogout} isAuth={isAuthenticated} />
-      <div className="container mt-5">
-        <Switch>
+
+      <Router>
+        <Navbar handleLogout={handleLogout} isAuth={isAuthenticated} />
+        <Routes>
           <Route path='/signup' element={<Signup />} />
+          <Route path='/northern' element={<Northern />} />
+          <Route path='/central' element={<Central />} />
+          <Route path='/southern' element={<Southern />} />
+          <Route path='/' element={<Home />} />
+
           <Route
             path="/login"
-            render={(props) => <Login {...props} nowCurrentUser={nowCurrentUser} setIsAuthenticated={setIsAuthenticated} user={currentUser} />}
+            element={<Login nowCurrentUser={nowCurrentUser} setIsAuthenticated={setIsAuthenticated} user={currentUser} />}
           />
-          <PrivateRoute path="/profile" component={Profile} user={currentUser} handleLogout={handleLogout} />
-          <Route exact path='/' element={<Home />} />
-          <Route path='/central' element={<Central />} />
-          <Route path='/northern' element={<Northern />} />
-          <Route path='/southern' element={<Southern />} />
-        </Switch>
-      </div>
-      <Footer />
+          <Route path="/profile" element={<Profile user={currentUser} handleLogout={handleLogout} />} />
+        </Routes>
+      </Router>
     </div>
   );
 }
-
-// ROUTES HERE //
-// class App extends Component {
-//   render() {
-//     return (
-//       <Router>
-//         <div>
-//           <Routes>
-//             {/* <Route exact path='/' element={<Home />} /> */}
-//             <Route path='/central' element={<Central />} />
-//             <Route path='/northern' element={<Northern />} />
-//             <Route path='/southern' element={<Southern />} />
-//             <Route path='/users/signup' element={<Signup />} />
-//             <Route path='/users/login' element={<Login />} />
-//           </Routes>
-//         </div>
-//       </Router>
-//     );
-//   }
-// }
 
 export default App;
