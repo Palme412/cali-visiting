@@ -13,6 +13,7 @@ import Home from "./components/Home";
 import Central from "./components/Central";
 import Northern from "./components/Northern";
 import Southern from "./components/Southern";
+import Signup from "./components/Signup"
 
 class App extends Component {
   render() {
@@ -24,6 +25,7 @@ class App extends Component {
             <Route path='/central' element={<Central />} />
             <Route path='/northern' element={<Northern />} />
             <Route path='/southern' element={<Southern />} />
+            <Route path='/users/signup' element={<Signup />} />
           </Routes>
         </div>
       </Router>
