@@ -25,20 +25,20 @@ const Profile = (props) => {
 
                                 <div class="content">
                                     <table class="table-profile">
-                                        <tr>
-                                            <th colspan="1"></th>
-                                            <th colspan="2"></th>
-                                        </tr>
+
                                         <tr>
                                             <td>Name: {name}</td>
                                         </tr>
                                         <tr>
                                             <td>Email: {email}</td>
                                         </tr>
-                                        <tr>
-                                            <td>Account ID: {id}</td>
-                                        </tr>
                                     </table>
+                                    <form>
+                                        <label>
+                                            Places of interest:
+                                            <input type="text" />
+                                        </label>
+                                    </form>
                                 </div>
                             </div>
                         </div>
