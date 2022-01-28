@@ -50,6 +50,7 @@ class Signup extends Component {
                 name: this.state.name,
                 email: this.state.email,
                 password: this.state.password,
+                confirmPassword: this.state.confirmPassword
             };
             axios
                 .post(`${REACT_APP_SERVER_URL}/users/signup`, newUser)
@@ -162,29 +163,7 @@ class Signup extends Component {
                         <div className="column is-8 is-offset-2">
                             <br />
                             <nav className="level">
-                                <div className="level-left">
-                                    <div className="level-item">
-                                        <span className="icon">
-                                            <i className="fab fa-twitter"></i>
-                                        </span>{" "}
-                                        &emsp;
-                                        <span className="icon">
-                                            <i className="fab fa-facebook"></i>
-                                        </span>{" "}
-                                        &emsp;
-                                        <span className="icon">
-                                            <i className="fab fa-instagram"></i>
-                                        </span>{" "}
-                                        &emsp;
-                                        <span className="icon">
-                                            <i className="fab fa-github"></i>
-                                        </span>{" "}
-                                        &emsp;
-                                        <span className="icon">
-                                            <i className="fas fa-envelope"></i>
-                                        </span>
-                                    </div>
-                                </div>
+
                                 <div className="level-right">
                                     <small
                                         className="level-item"

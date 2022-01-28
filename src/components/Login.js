@@ -66,7 +66,7 @@ class Login extends Component {
                                             className="input is-medium is-rounded"
                                             type="email"
                                             placeholder="hello@example.com"
-                                            autocomplete="username"
+                                            autoComplete="username"
                                             value={this.state.email}
                                             onChange={this.handleEmail.bind(this)}
                                             required
@@ -79,7 +79,7 @@ class Login extends Component {
                                             className="input is-medium is-rounded"
                                             type="password"
                                             placeholder="**********"
-                                            autocomplete="current-password"
+                                            autoComplete="current-password"
                                             value={this.state.password}
                                             onChange={this.handlePassword.bind(this)}
                                             required
