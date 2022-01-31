@@ -11,6 +11,8 @@ const Note = props => (
                 <ReactMarkdown source={props.children} />
             </div>
             <div className='singleNoteButton'>
+                <a onClick={() => { props.handleUpdateNote(props.id); }}>Update</a>
+                <a onClick={() => { props.handleDeleteNote(props.id); }}>Delete</a>
             </div>
         </div>
     </div>
@@ -19,7 +21,10 @@ const Note = props => (
 Note.propTypes = {
     text: PropTypes.string.isRequired,
     children: PropTypes.string.isRequired,
-    // timestamp: PropTypes.string.isRequired
+    id: PropTypes.string.isRequired,
+    handleUpdateNote: PropTypes.func.isRequired,
+    handleDeleteNote: PropTypes.func.isRequired,
+    timestamp: PropTypes.string.isRequired
 };
 
 export default Note;

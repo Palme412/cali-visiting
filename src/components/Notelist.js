@@ -20,6 +20,8 @@ Notelist.propTypes = {
         text: PropTypes.string,
         id: PropTypes.string,
     })),
+    handleDeleteNote: PropTypes.func.isRequired,
+    handleUpdateNote: PropTypes.func.isRequired,
 };
 
 Notelist.defaultProps = {
