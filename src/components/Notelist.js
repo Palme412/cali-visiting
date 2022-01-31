@@ -1,74 +1,29 @@
-import React, { Component } from 'react';
-import './Notelist.css';
+import React from 'react';
+import PropTypes from 'prop-types';
 import Note from './Note';
-import axios from 'axios';
 
-// Pass user into notelist and have notelist connected to database to return that users notes
-// render notes into notelist... form in notelist to store into database
-// pass input data to mongodb through mongoose
-// post request 
+const Notelist = (props) => {
+    const noteNodes = props.data.map(note => (
+        <Note text={note.text} key={note._id} id={note._id}>
+            {note.text}
+        </Note>
+    ));
+    return (
+        <div>
+            {noteNodes}
+        </div>
+    );
+};
 
-// use axios to post to backend
-// css profile to change input color of text input box
+Notelist.propTypes = {
+    data: PropTypes.arrayOf(PropTypes.shape({
+        text: PropTypes.string,
+        id: PropTypes.string,
+    })),
+};
 
-
-class Notelist extends Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            note: ''
-        };
-    }
-
-    updateNote = (event) => {
-        let fieldName = event.target.name;
-        let fieldValue = event.target.value;
-        if (fieldName === 'note') {
-            this.setState({ note: fieldValue });
-        }
-    };
-    addNote = (e) => {
-        let { note } = this.state;
-        fetch('localhost:8000/add_note', {
-            method: 'post',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({
-                note: note
-            })
-        }).then(response => response.json());
-        console.log(note);
-    }
-    render() {
-        return (
-            <div className='card-footer'>
-                <section>
-                    <div className="columns has-same-height is-gapless">
-                        <div className="column">
-                            <div className="card">
-                                <div className="card-content">
-                                    <h3 className="title is-4">Notes</h3>
-                                    <div className="content">
-
-                                        <label>Add a note:</label>
-                                        <input className='inputbox' onChange={this.updateNote} name='note' value={this.state.note} />
-                                        <button onClick={this.addNote}>Add Note</button>
-                                        <table className="table-profile">
-                                            <tbody>
-                                                <tr>
-                                                    <td><Note></Note></td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-            </div>
-        );
-    }
-}
+Notelist.defaultProps = {
+    data: [],
+};
 
 export default Notelist;

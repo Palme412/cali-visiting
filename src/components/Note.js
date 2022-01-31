@@ -1,28 +1,25 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
+import ReactMarkdown from 'react-markdown';
 
 
-class Note extends Component {
-    constructor(props) {
-        super(props);
-    }
-    render() {
-        return (
-            <div className='card-footer'>
-                <section>
-                    <div className="columns has-same-height is-gapless">
-                        <div className="column">
-                            <div className="card">
-                                <div className="card-content">
-                                    <div className="content">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
+const Note = props => (
+    <div className='singleNote'>
+        <div className='textContent'>
+            <div className='singleNoteContent'>
+                <h2>{props.text}</h2>
+                <ReactMarkdown source={props.children} />
             </div>
-        );
-    }
-}
+            <div className='singleNoteButton'>
+            </div>
+        </div>
+    </div>
+);
+
+Note.propTypes = {
+    text: PropTypes.string.isRequired,
+    children: PropTypes.string.isRequired,
+    // timestamp: PropTypes.string.isRequired
+};
 
 export default Note;

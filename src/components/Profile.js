@@ -1,9 +1,37 @@
 import './Profile.css';
 import React from 'react';
 import { Link } from 'react-router-dom';
+import Notebox from './Notebox';
 import Note from './Note';
-import Notelist from './Notelist';
+// import registerServiceWorker from './registerServiceWorker';
 
+
+// router.put('/note/:noteId', (req, res) => {
+//     const { noteId } = req.params;
+//     if (!noteId) {
+//         return res.json({ success: false, error: 'No note id provided' });
+//     }
+//     Note.findById(noteId, (error, comment) => {
+//         if (error) return res.json({ success: false, error });
+//         const { text } = req.body;
+//         if (text) note.text = text;
+//         note.save(error => {
+//             if (error) return res.json({ success: false, error });
+//             return res.json({ success: true });
+//         });
+//     });
+// });
+
+// router.delete('/note/:noteId', (req, res) => {
+//     const { noteId } = req.params;
+//     if (!noteId) {
+//         return res.json({ success: false, error: 'No note id provided ' });
+//     }
+//     Note.remove({ _id: noteId }, (error, note) => {
+//         if (error) return res.json({ success: false, error });
+//         return res.json({ success: true });
+//     });
+// });
 
 const Profile = (props) => {
     const { handleLogout, user } = props;
@@ -58,8 +86,7 @@ const Profile = (props) => {
     return (
         <div className="text-center pt-4">
             {user ? userData : errorDiv()}
-            <Notelist>
-            </Notelist>
+            <Notebox />
         </div>
     );
 
