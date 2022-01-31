@@ -9,12 +9,9 @@ import './App.css';
 
 // Components
 import Signup from './components/Signup';
-// import About from './components/About';
-// import Footer from './components/Footer';
 import Login from './components/Login';
 import Navbar from './components/Navbar';
 import Profile from './components/Profile';
-// import Welcome from './components/Welcome';
 import Central from './components/Central';
 import Northern from './components/Northern';
 import Southern from './components/Southern';
@@ -22,7 +19,6 @@ import Home from './components/Home';
 
 const PrivateRoute = ({ component: Component, ...rest }) => {
   let token = localStorage.getItem('jwtToken');
-  // console.log('===> Hitting a Private Route');
   return <Route {...rest} render={(props) => {
     return token ? <Component {...rest} {...props} /> : <Navigate to="/login" />
   }} />
@@ -39,7 +35,6 @@ function App() {
 
     if (!localStorage.getItem('jwtToken')) {
       setIsAuthenticated(false);
-      // console.log('====> Authenticated is now FALSE');
     } else {
       token = jwt_decode(localStorage.getItem('jwtToken'));
       setAuthToken(localStorage.getItem('jwtToken'));
@@ -48,14 +43,12 @@ function App() {
   }, []);
 
   const nowCurrentUser = (userData) => {
-    // console.log('===> nowCurrentUser is here.');
     setCurrentUser(userData);
     setIsAuthenticated(true);
   }
 
   const handleLogout = () => {
     if (localStorage.getItem('jwtToken')) {
-      // remove token for localStorage
       localStorage.removeItem('jwtToken');
       setCurrentUser(null);
       setIsAuthenticated(false);

@@ -15,8 +15,6 @@ const Noteform = props => (
 );
 
 Noteform.propTypes = {
-    // submitNote: PropTypes.func.isRequired,
-    // handleChangeText: PropTypes.func.isRequired,
     text: PropTypes.string
 };
 

@@ -28,7 +28,7 @@ class Login extends Component {
     }
 
     handleSubmit = (e) => {
-        e.preventDefault(); // at the beginning of a submit function
+        e.preventDefault();
         const userData = {
             email: this.state.email,
             password: this.state.password
@@ -36,14 +36,10 @@ class Login extends Component {
         axios.post(`${REACT_APP_SERVER_URL}/users/login`, userData)
             .then(response => {
                 const { token } = response.data;
-                // save token to localStorage
                 localStorage.setItem('jwtToken', token);
-                // set token to headers
                 setAuthToken(token);
-                // decode token to get the user data
                 const decoded = jwt_decode(token);
-                // set the current user
-                this.props.nowCurrentUser(decoded); // funnction passed down as props.
+                this.props.nowCurrentUser(decoded);
             })
             .catch(error => {
                 console.log('===> Error on login', error);
@@ -52,7 +48,7 @@ class Login extends Component {
     };
 
     render() {
-        if (this.props.user) return <Navigate to="/profile" />; // You can have them redirected to profile (your choice)
+        if (this.props.user) return <Navigate to="/profile" />;
 
         return (
             <>

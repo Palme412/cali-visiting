@@ -5,8 +5,6 @@ import Notebox from './Notebox';
 import Note from './Note';
 import { BrowserRouter as Router } from 'react-router-dom';
 
-// import registerServiceWorker from './registerServiceWorker';
-
 
 const Profile = (props) => {
     const { handleLogout, user } = props;
@@ -14,7 +12,6 @@ const Profile = (props) => {
     const expirationTime = new Date(exp * 1000);
     let currentTime = Date.now();
 
-    // make a condition that compares exp and current time
     if (currentTime >= expirationTime) {
         handleLogout();
         alert('Session has ended. Please login to continue.');
