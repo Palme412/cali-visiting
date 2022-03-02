@@ -77,21 +77,13 @@ class Signup extends Component {
                         <div className="column is-8 is-offset-2 register">
                             <div className="columns">
                                 <div className="column left">
-                                    <h1 className="title is-1">Super Cool Website</h1>
+                                    <h1 className="title is-1">Cali Visiting</h1>
                                     <h2 className="subtitle colored is-4">
-                                        Lorem ipsum dolor sit amet.
+                                        Simple guide to visiting California
                                     </h2>
-                                    <p>
-                                        Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                                        Corporis ex deleniti aliquam tempora libero excepturi vero
-                                        soluta odio optio sed.
-                                    </p>
                                 </div>
                                 <div className="column right has-text-centered">
                                     <h1 className="title is-4">Sign up today</h1>
-                                    <p className="description">
-                                        Lorem ipsum dolor, sit amet consectetur adipisicing elit
-                                    </p>
                                     <form onSubmit={this.handleSubmit.bind(this)}>
                                         <div className="field">
                                             <div className="control">

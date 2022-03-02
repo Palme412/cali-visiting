@@ -11,7 +11,7 @@ const Note = props => (
                 <ReactMarkdown source={props.children} />
             </div>
             <div className='singleNoteButton'>
-                <a onClick={() => { props.handleUpdateNote(props.id); }}>Update</a>
+                <a onClick={() => { props.handleUpdateNote(props.id); }}>Update </a>
                 <a onClick={() => { props.handleDeleteNote(props.id); }}>Delete</a>
             </div>
         </div>

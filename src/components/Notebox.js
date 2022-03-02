@@ -68,7 +68,7 @@ class Notebox extends Component {
             this.state.data.slice(i + 1)
         ];
         this.setState({ data });
-        fetch(`localhost:8000/note/note/${id}`, { method: 'DELETE' })
+        fetch(`/note/note/${id}`, { method: 'DELETE' })
             .then(res => res.json()).then((res) => {
                 if (!res.success) this.setState({ error: res.error });
             });
@@ -115,7 +115,7 @@ class Notebox extends Component {
             body: JSON.stringify({ text }),
         }).then(res => res.json()).then((res) => {
             if (!res.success) this.setState({ error: res.error.message || res.error });
-            else this.setState({ texxt: '', updateId: null });
+            else this.setState({ text: '', updateId: null });
         });
     }
     render() {
