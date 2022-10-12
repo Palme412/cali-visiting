@@ -24,7 +24,7 @@ class Home extends Component {
                                             </a>
                                         </span>
                                         <span className="navbar-item">
-                                            <a className="button is-white is-outlined" href="/central">
+                                            <a className="button is-white is-outlined central" href="/central">
                                                 <span className="icon">
                                                 </span>
                                                 <span>Central</span>

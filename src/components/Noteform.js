@@ -19,7 +19,7 @@ Noteform.propTypes = {
 };
 
 Noteform.defaultProps = {
-    text: ''
+    text: 'text'
 };
 
 export default Noteform;
