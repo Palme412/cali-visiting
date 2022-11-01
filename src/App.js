@@ -10,7 +10,7 @@ import './App.css';
 // Components
 import Signup from './components/Signup';
 import Login from './components/Login';
-import Navbar from './components/Navbar';
+// import Navbar from './components/Navbar';
 import Profile from './components/Profile';
 import Central from './components/Central';
 import Northern from './components/Northern';
@@ -59,7 +59,7 @@ function App() {
     <div className="App">
 
       <Router>
-        <Navbar handleLogout={handleLogout} isAuth={isAuthenticated} />
+        {/* <Navbar handleLogout={handleLogout} isAuth={isAuthenticated} /> */}
         <Routes>
           <Route path='/signup' element={<Signup />} />
           <Route path='/northern' element={<Northern />} />
