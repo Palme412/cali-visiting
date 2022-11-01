@@ -1,7 +1,7 @@
 # Cali Visiting
 
 This application is a simple guide on visiting California based on northern, central and southern California. There is four selected counties per region with three places to visit for that county. 
-This isn't deployed yet as I am having some connection issues between frontend and backend but the functionality does work in the backend through postman. 
+The front end of this application is deployed at https://cali-visiting.herokuapp.com/ 
 
 # Code Snippets
 ```
